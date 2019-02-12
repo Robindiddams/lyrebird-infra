@@ -1,0 +1,8 @@
+.terraform
+*.backup
+*.tfstate
+/scratch
+
+.idea/
+*.iml
+.vscode
