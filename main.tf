@@ -3,16 +3,6 @@ provider "aws" {
   profile = "lyrebird"
 }
 
-resource "aws_s3_bucket" "upload-bucket" {
-  bucket = "lyrebird-uploads"
-  acl    = "private"
-}
-
-resource "aws_s3_bucket" "post-bucket" {
-  bucket = "lyrebird-completion"
-  acl    = "private"
-}
-
 resource "aws_dynamodb_table" "lyrebird-tasks" {
   name = "lyrebird-tasks"
   hash_key = "id"
